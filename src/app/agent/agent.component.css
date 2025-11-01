@@ -1,0 +1,13 @@
+.assistant {
+    text-align: left;
+    color: greenyellow;
+}
+
+.user {
+    text-align: right;
+    color: cyan;
+}
+
+a {
+    color: white;
+}

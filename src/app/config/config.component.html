@@ -1,0 +1,95 @@
+<h1>Configuration</h1>
+<img src="assets/eclaire.png" alt="Eclaire" height="400" />
+<p>These settings determine how your translator behaves.</p>
+<p>For your security, all values are stored directly in memory, and are not persisted. Refresh the page to reset to default values.</p>
+<p>Need a Deepgram API key? Visit https://deepgram.com to get one for free!</p>
+<p>Translation is powered by our own translation API. To get a key, ask us in Discord. https://chat.nhcarrigan.com</p>
+<p>A public, VERY low rate limit translation API key is pre-loaded for you. You may use it to test this application, but we do not recommend using it for production.</p>
+<form>
+  <label for="apiKey">Deepgram API Key:</label>
+  <input
+    name="apiKey"
+    id="apiKey"
+    type="{{ passType }}"
+    [formControl]="apiKey"
+  />
+  <label for="showPass">Show?</label>
+  <input type="checkbox" id="showPass" name="showPass" (click)="togglePass()" />
+  <label for="translateKey">Translate Key:</label>
+  <input
+    name="translateKey"
+    id="translateKey"
+    type="{{ translatePassType }}"
+    [formControl]="translateKey"
+  />
+  <label for="showTranslatePass">Show?</label>
+  <input type="checkbox" id="showTranslatePass" name="showTranslatePass" (click)="toggleTranslatePass()" />
+  <label for="sourceLanguage">Source Language:</label>
+  <select name="sourceLanguage" id="sourceLanguage" [formControl]="sourceLanguage">
+    <option value="English">English</option>
+    <option value="German">German</option>
+    <option value="Dutch">Dutch</option>
+    <option value="Swedish">Swedish</option>
+    <option value="Danish">Danish</option>
+    <option value="Spanish">Spanish</option>
+    <option value="French">French</option>
+    <option value="Portuguese">Portuguese</option>
+    <option value="Italian">Italian</option>
+    <option value="Turkish">Turkish</option>
+    <option value="Norwegian">Norwegian</option>
+    <option value="Indonesian">Indonesian</option>
+  </select>
+  <label for="targetLanguage">Target Language:</label>
+  <select name="targetLanguage" id="targetLanguage" [formControl]="targetLanguage">
+    <option value="English">English</option>
+    <option value="Albanian">Albanian</option>
+    <option value="Arabic">Arabic</option>
+    <option value="Azerbaijani">Azerbaijani</option>
+    <option value="Basque">Basque</option>
+    <option value="Bengali">Bengali</option>
+    <option value="Bulgarian">Bulgarian</option>
+    <option value="Catalan">Catalan</option>
+    <option value="Chinese">Chinese</option>
+    <option value="Chinese (traditional)">Chinese (traditional)</option>
+    <option value="Czech">Czech</option>
+    <option value="Danish">Danish</option>
+    <option value="Dutch">Dutch</option>
+    <option value="Esperanto">Esperanto</option>
+    <option value="Estonian">Estonian</option>
+    <option value="Finnish">Finnish</option>
+    <option value="French">French</option>
+    <option value="Galician">Galician</option>
+    <option value="German">German</option>
+    <option value="Greek">Greek</option>
+    <option value="Hebrew">Hebrew</option>
+    <option value="Hindi">Hindi</option>
+    <option value="Hungarian">Hungarian</option>
+    <option value="Indonesian">Indonesian</option>
+    <option value="Irish">Irish</option>
+    <option value="Italian">Italian</option>
+    <option value="Japanese">Japanese</option>
+    <option value="Korean">Korean</option>
+    <option value="Kyrgyz">Kyrgyz</option>
+    <option value="Latvian">Latvian</option>
+    <option value="Lithuanian">Lithuanian</option>
+    <option value="Malay">Malay</option>
+    <option value="Norwegian">Norwegian</option>
+    <option value="Persian">Persian</option>
+    <option value="Polish">Polish</option>
+    <option value="Portuguese">Portuguese</option>
+    <option value="Portuguese (Brazil)">Portuguese (Brazil)</option>
+    <option value="Romanian">Romanian</option>
+    <option value="Russian">Russian</option>
+    <option value="Slovak">Slovak</option>
+    <option value="Slovenian">Slovenian</option>
+    <option value="Spanish">Spanish</option>
+    <option value="Swedish">Swedish</option>
+    <option value="Tagalog">Tagalog</option>
+    <option value="Thai">Thai</option>
+    <option value="Turkish">Turkish</option>
+    <option value="Ukrainian">Ukrainian</option>
+    <option value="Urdu">Urdu</option>
+  </select>
+</form>
+<button class="green" (click)="save()">Save Configuration</button>
+<button class="red" (click)="cancel()">Cancel</button>

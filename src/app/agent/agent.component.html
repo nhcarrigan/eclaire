@@ -1,0 +1,36 @@
+<h1>Eclaire</h1>
+<img src="assets/eclaire.png" alt="Eclaire" height="400" />
+<p>
+  Usage: {{ this.cost.toLocaleString("en-US", { style: "currency", currency: "USD"})}}
+</p>
+<div *ngIf="!connected">
+  <p>When you are ready to connect to the websocket, click the button below.</p>
+  <p>
+    Note that you are billed for time connected, not for time you spend
+    transmitting audio.
+  </p>
+  <p><a routerLink="/config">Reconfigure</a></p>
+  <button (click)="connect()">Connect</button>
+</div>
+<div *ngIf="connected">
+  <p>Sometimes our endpointing detection fails to trigger. If you are done speaking, click the button below to force a transcription.</p>
+  <button (click)="finalise()">Force Transcription</button>
+  <p>
+    When you are done with your conversation, we recommend disconnecting to save
+    costs.
+  </p>
+  <button (click)="disconnect()">Disconnect</button>
+</div>
+<p>
+</p>
+<h2>Transcript</h2>
+<button (click)="clearTranscript()">Clear Transcript</button>
+<div style="background-color: black;">
+<p *ngFor="let message of messages" [class]="message.type">{{ message.content }}</p>
+</div>
+<h2>Logs</h2>
+<button (click)="clearLogs()">Clear Logs</button>
+<p *ngFor="let log of logs">{{ log }}</p>
+<h2>Errors</h2>
+<button (click)="clearErrors()">Clear Errors</button>
+<p *ngFor="let error of errors">{{ error }}</p>
