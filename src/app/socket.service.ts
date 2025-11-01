@@ -44,14 +44,14 @@ export class SocketService {
   /**
    * @param key
    */
-  public connect(key: string): void {
+  public connect(key: string, lang: string): void {
     if (this.isConnected()) {
       throw new Error("Socket is already connected");
     }
     if (!key) {
       throw new Error("API key is required");
     }
-    this.socket = new WebSocket("wss://api.deepgram.com/v1/listen?model=nova-3-general&encoding=linear16&sample_rate=48000&channels=1&endpointing=500&punctuate=true", [ "token", key ]);
+    this.socket = new WebSocket(`wss://api.deepgram.com/v1/listen?model=nova-3-general&encoding=linear16&sample_rate=48000&channels=1&endpointing=500&punctuate=true&language=${lang}`, [ "token", key ]);
     this.socket.onopen = () => {
       console.log("open");
       if (this.listeners.open) {

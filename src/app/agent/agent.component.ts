@@ -158,7 +158,7 @@ export class AgentComponent {
 
   public async connect() {
     this.logs.push("Connecting...");
-    this.socket.connect(this.config?.apiKey ?? "");
+    this.socket.connect(this.config?.apiKey ?? "", this.config?.sourceLanguage ?? "en");
     while (!this.socket.isConnected()) {
       this.logs.push("Waiting for connection...");
       await new Promise((resolve) => setTimeout(resolve, 1000));
