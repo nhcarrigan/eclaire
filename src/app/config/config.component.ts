@@ -87,6 +87,17 @@ export class ConfigComponent {
         "Turkish",
         "Norwegian",
         "Indonesian",
+        "Bulgarian",
+        "Czech",  
+        "Finnish",
+        "Hindi",
+        "Hungarian",
+        "Japanese",
+        "Korean",
+        "Polish",
+        "Russian",
+        "Ukrainian",
+        "Vietnamese",
       ].includes(control.value),
   ]);
   public targetLanguage = new FormControl("English", [
