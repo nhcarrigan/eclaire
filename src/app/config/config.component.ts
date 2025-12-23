@@ -70,7 +70,7 @@ const langCodes = {
 export class ConfigComponent {
   public apiKey = new FormControl("", [Validators.required]);
   // I am aware that we are committing an API key. This is deliberate - this key has a 10 request per minute rate limit, and is provided for demonstration purposes.
-  public translateKey = new FormControl("accd53eb-371e-4657-81c8-1d2d521407a7", [Validators.required]);
+  public translateKey = new FormControl("7d599ce7-bdbc-4a94-8e4d-a33f9204395f", [Validators.required]);
   public sourceLanguage = new FormControl("English", [
     Validators.required,
     () => (control: AbstractControl) =>
