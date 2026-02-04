@@ -27,7 +27,7 @@
     "@angular-devkit/build-angular": "^19.1.5",
     "@angular/cli": "^19.1.5",
     "@angular/compiler-cli": "^19.1.4",
-    "@nhcarrigan/eslint-config": "5.1.0",
+    "@nhcarrigan/eslint-config": "5.2.0",
     "@nhcarrigan/typescript-config": "4.0.0",
     "@types/jasmine": "~5.1.5",
     "@types/node": "22.13.1",
