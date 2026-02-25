@@ -52,8 +52,8 @@ importers:
         specifier: ^19.1.4
         version: 19.2.15(@angular/compiler@19.2.15)(typescript@5.7.3)
       '@nhcarrigan/eslint-config':
-        specifier: 5.1.0
-        version: 5.1.0(@typescript-eslint/utils@8.46.2(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3))(eslint@9.19.0(jiti@1.21.7))(playwright@1.56.1)(react@19.2.0)(typescript@5.7.3)(vitest@4.0.6(@types/node@22.13.1)(jiti@1.21.7)(less@4.2.2)(sass@1.85.0)(terser@5.39.0))
+        specifier: 5.2.0
+        version: 5.2.0(@typescript-eslint/utils@8.46.2(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3))(eslint@9.19.0(jiti@1.21.7))(playwright@1.56.1)(react@19.2.0)(typescript@5.7.3)(vitest@4.0.6(@types/node@22.13.1)(jiti@1.21.7)(less@4.2.2)(sass@1.85.0)(terser@5.39.0))
       '@nhcarrigan/typescript-config':
         specifier: 4.0.0
         version: 4.0.0(typescript@5.7.3)
@@ -1438,8 +1438,8 @@ packages:
       typescript: '>=5.5 <5.9'
       webpack: ^5.54.0
 
-  '@nhcarrigan/eslint-config@5.1.0':
-    resolution: {integrity: sha512-TS6kwPTcm8pFzp34FRq+8PR+0jgVr7FDUDrfilAKtWDArqZSabTMtTt+N1rJyNHQqBHs7de/pUYNWiLpThy2Bw==}
+  '@nhcarrigan/eslint-config@5.2.0':
+    resolution: {integrity: sha512-YpTTqhviKMlRwKF+RC/GYiA5i2jTCmg8uftuiufldneNV5HMbGpTfBbV7tpa8++5mpYJc4+eZaf40QbDiz84dQ==}
     engines: {node: '>=22', pnpm: '>=9'}
     peerDependencies:
       eslint: '>=9'
@@ -7050,7 +7050,7 @@ snapshots:
       typescript: 5.7.3
       webpack: 5.98.0(esbuild@0.25.4)
 
-  '@nhcarrigan/eslint-config@5.1.0(@typescript-eslint/utils@8.46.2(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3))(eslint@9.19.0(jiti@1.21.7))(playwright@1.56.1)(react@19.2.0)(typescript@5.7.3)(vitest@4.0.6(@types/node@22.13.1)(jiti@1.21.7)(less@4.2.2)(sass@1.85.0)(terser@5.39.0))':
+  '@nhcarrigan/eslint-config@5.2.0(@typescript-eslint/utils@8.46.2(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3))(eslint@9.19.0(jiti@1.21.7))(playwright@1.56.1)(react@19.2.0)(typescript@5.7.3)(vitest@4.0.6(@types/node@22.13.1)(jiti@1.21.7)(less@4.2.2)(sass@1.85.0)(terser@5.39.0))':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.4.1(eslint@9.19.0(jiti@1.21.7))
       '@eslint/compat': 1.2.4(eslint@9.19.0(jiti@1.21.7))
@@ -7107,7 +7107,7 @@ snapshots:
 
   '@npmcli/fs@4.0.0':
     dependencies:
-      semver: 7.7.1
+      semver: 7.7.3
 
   '@npmcli/git@6.0.3':
     dependencies:
@@ -8975,10 +8975,6 @@ snapshots:
     dependencies:
       websocket-driver: 0.7.4
 
-  fdir@6.5.0(picomatch@4.0.2):
-    optionalDependencies:
-      picomatch: 4.0.2
-
   fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
@@ -10059,7 +10055,7 @@ snapshots:
       make-fetch-happen: 14.0.3
       nopt: 8.1.0
       proc-log: 5.0.0
-      semver: 7.7.1
+      semver: 7.7.3
       tar: 7.5.2
       tinyglobby: 0.2.15
       which: 5.0.0
@@ -10089,7 +10085,7 @@ snapshots:
 
   npm-install-checks@7.1.2:
     dependencies:
-      semver: 7.7.1
+      semver: 7.7.3
 
   npm-normalize-package-bin@4.0.0: {}
 
@@ -11349,8 +11345,8 @@ snapshots:
   vite@6.4.1(@types/node@22.13.1)(jiti@1.21.7)(less@4.2.2)(sass@1.85.0)(terser@5.39.0):
     dependencies:
       esbuild: 0.25.4
-      fdir: 6.5.0(picomatch@4.0.2)
-      picomatch: 4.0.2
+      fdir: 6.5.0(picomatch@4.0.3)
+      picomatch: 4.0.3
       postcss: 8.5.6
       rollup: 4.52.5
       tinyglobby: 0.2.15
